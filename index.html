@@ -87,11 +87,18 @@
 </head>
 <body>
     <h1>Google Dorks for Bug Bounty</h1>
+   
     <label for="domainInput">Enter a domain:</label>
     <input type="text" id="domainInput" placeholder="example.com" oninput="updateDomain()">
     <div id="tooltip" class="hidden">For multiple domains, separate by comma. e.g., example1.com, example2.com</div>
 
-    
+    <ul id="dorkList"></ul>
+    <section>
+   
+        <ul class="link-list">
+           
+        </ul>
+    </section>
     <script>
     const domainInput = document.getElementById('domainInput');
     const tooltip = document.getElementById('tooltip');
