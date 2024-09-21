@@ -13,6 +13,16 @@ A list of Google Dorks for Bug Bounty, Web Application Security, and Pentesting
 site:example.com -www -shop -share -ir -mfa
 ```
 
+### Git Branch
+
+```
+site:example.com inurl:/.git/config intext:"[remote" | intext:"[branch"
+```
+### Directory Leak
+
+```
+site:example.com intitle:"Index of /"
+```
 ### PHP extension w/ parameters
 
 ```
