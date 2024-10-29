@@ -147,7 +147,7 @@ filterDorks();
     let prevTitle = '';
 
         function createDorkListItem(dork, description) {
-            const googleLink = `https://duckduckgo.com/?q=${encodeURIComponent(dork)}`;
+            const googleLink = `https://www.google.com/search?q=${encodeURIComponent(dork)}`;
 
             const listItem = document.createElement("li");
 
@@ -210,7 +210,7 @@ filterDorks();
                     originalDork = originalDork.replace(/ \| "([^"]+)"/gi, " | ");
                 }
 
-                const updatedLink = `https://duckduckgo.com/?q=${encodeURIComponent(originalDork)}`;
+                const updatedLink = `https://www.google.com/search?q=${encodeURIComponent(originalDork)}`;
             
                 link.textContent = originalDork;
                 link.href = updatedLink;
